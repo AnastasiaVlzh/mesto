@@ -1,0 +1,16 @@
+.profile__edit-button{
+    grid-area: edit-button;
+    align-self: end;
+    cursor: pointer;
+}
+@media screen and (max-width:1045px) and (min-width:724px){
+    .profile__edit-button{
+        justify-self: start;
+        align-self: center;
+    }
+}
+@media screen and (max-width:640px){
+    .profile__edit-button{
+        justify-self: start;
+    }
+}

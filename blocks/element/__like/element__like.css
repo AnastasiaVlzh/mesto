@@ -1,0 +1,10 @@
+.element__like{
+    transition: ease-in 1s;
+    cursor: pointer;
+}
+.element__like:hover{
+    opacity: 0.4;
+}
+.element__like:active{
+    background: #000000;
+}
