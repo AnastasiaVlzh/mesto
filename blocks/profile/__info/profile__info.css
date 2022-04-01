@@ -19,8 +19,7 @@
         grid-template-areas: 
         "avatar avatar"
         "user-name edit-button"
-        "description description"
-        ;
+        "description description";
         align-items: center;
         justify-items: center;
         row-gap: 22px;
