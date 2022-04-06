@@ -20,9 +20,9 @@
         "avatar avatar"
         "user-name edit-button"
         "description description";
-        align-items: center;
+        align-items: end;
         justify-items: center;
-        row-gap: 22px;
+        row-gap: 14px;
         column-gap: 10px;
     }
 }

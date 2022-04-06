@@ -1,9 +1,13 @@
 .element__like{
-    transition: ease-in 1s;
     cursor: pointer;
-}
-.element__like:hover{
-    opacity: 0.4;
+    background-image: url(../../../images/elements/Vector.svg);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 19px;
+    border: none;
+    background-color: transparent;
+    opacity: 0.5;
+    transition: ease-in 0.6s;
 }
 .element__like:active{
     background: #000000;

@@ -2,6 +2,16 @@
     grid-area: edit-button;
     align-self: end;
     cursor: pointer;
+    background-image: url(../../../images/Edit-Button.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    background-size: 10px, 10px;
+    border: 1px solid #FFFFFF;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    box-sizing: border-box;
 }
 @media screen and (max-width:1045px) and (min-width:724px){
     .profile__edit-button{
@@ -12,5 +22,8 @@
 @media screen and (max-width:640px){
     .profile__edit-button{
         justify-self: start;
+        align-self: center;
+        width: 18px;
+        height:18px;
     }
 }

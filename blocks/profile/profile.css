@@ -1,9 +1,11 @@
 .profile{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 200px;
     margin-right: 200px;
-    margin-top: 40px; 
+    margin-top: 36px; 
+    box-sizing: border-box;
 }
 @media screen and (max-width:1045px) and (min-width:724px){
     .profile{
@@ -21,7 +23,7 @@
     .profile{
         margin-left: 19px;
         margin-right: 19px;
-        margin-top: 38px;
+        margin-top: 73.6px;
         flex-direction: column;
         min-width: 282px;
         min-height: 286px;

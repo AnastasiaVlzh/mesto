@@ -4,7 +4,7 @@
     margin-right: 36px;
     margin-top: 48px;
     padding: 0;
-    max-width: 358px;
+    width: 358px;
     min-height: 50px;
     background-color: #000000;
     font-weight: 400;
@@ -13,4 +13,17 @@
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
+    border: none;
+    transition: ease-in 0.6s;
+}
+.popup__save:hover{
+    opacity: 0.8;
+}
+@media screen and (max-width:640px){
+    .popup__save{
+    width: 238px;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 25px;
+    }
 }

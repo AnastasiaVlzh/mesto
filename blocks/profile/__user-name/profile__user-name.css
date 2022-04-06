@@ -10,8 +10,9 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    max-width: 294px;
 }
-@media screen and (max-width:1045px) and (min-width:724px){
+@media screen and (max-width:1045px) and (min-width:641px){
     .profile__user-name{
         font-size: 30px;
     }
@@ -23,5 +24,6 @@
         line-height: 33px;
         text-align: center;
         justify-self: end;
+        max-width: 189px;
     }
 }
