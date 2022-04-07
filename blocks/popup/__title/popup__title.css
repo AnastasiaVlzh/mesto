@@ -16,7 +16,6 @@
         font-weight: 900;
         font-size: 18px;
         line-height: 22px;
-        width: 238px;
-        height: 22px;
+        max-width: 238px;
     }
 }

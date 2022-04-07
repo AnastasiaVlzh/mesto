@@ -6,8 +6,10 @@
     height: 19px;
     border: none;
     background-color: transparent;
-    opacity: 0.5;
     transition: ease-in 0.6s;
+}
+.element__like:hover{
+    opacity: 0.5;
 }
 .element__like:active{
     background: #000000;
