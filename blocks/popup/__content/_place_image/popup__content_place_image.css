@@ -1,0 +1,19 @@
+.popup__content_place_image{
+    width: auto;
+    max-width: 816px;
+    max-height: 540px;
+    margin: 90px auto;
+    background-color: transparent;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:640px){
+    .popup__content{
+        margin: auto; 
+    }
+}

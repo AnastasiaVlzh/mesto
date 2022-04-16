@@ -6,7 +6,10 @@
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 51px;
+    min-height: 744px;
+
 }
+
 @media screen and (max-width:723px) and (min-width:641px){
     .elements{
         margin-left: 5px;
