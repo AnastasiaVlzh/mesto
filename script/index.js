@@ -1,5 +1,5 @@
 let profileEdit = document.querySelector('.profile__edit-button');
-let profileOpen = document.querySelector('.popup__profile-form');
+let profileOpen = document.querySelector('.popup__profile_form');
 let profileCloseBtn = profileOpen.querySelector('.popup__close');
 let profileSubmit = profileOpen.querySelector('.popup__form')
 
@@ -60,7 +60,7 @@ const initialCards = [
   ];
 
 const placeAddBtn = document.querySelector('.profile__add-button');
-const placeAddPopup = document.querySelector('.popup_place-profile');
+const placeAddPopup = document.querySelector('.popup__place_profile');
 const placeCloseBtn = placeAddPopup.querySelector('.popup__close');
 const placeSubmitBtn = placeAddPopup.querySelector('.popup__save_place')
 const placeSubmit = placeAddPopup.querySelector('.popup__content')
@@ -100,7 +100,7 @@ function getElement(item){
       removeButton.addEventListener('click', handleRemoveElement);
 
       
-      const imageViewPopup = document.querySelector('.popup_place-image');
+      const imageViewPopup = document.querySelector('.popup__place_image');
       const imageViewCloseBtn = document.querySelector('.popup__close_image');
       
       function togglePopupImageView(){
