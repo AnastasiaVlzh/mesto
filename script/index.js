@@ -24,9 +24,7 @@ function openProfileForm () {
   jobInput.value = profileDescription.textContent; 
 }
 
-function closeProfileForm(){
-  closePopup(profileOpen)
-}
+
 
 function handleProfileFormSubmit (evt){
     evt.preventDefault();
@@ -37,7 +35,7 @@ function handleProfileFormSubmit (evt){
 }
 
 profileEdit.addEventListener('click', openProfileForm); 
-profileCloseBtn.addEventListener ('click',closeProfileForm);
+profileCloseBtn.addEventListener ('click', () => closePopup(profileOpen));
 profileForm.addEventListener('submit', handleProfileFormSubmit); 
 
 //add new card
@@ -82,17 +80,9 @@ const placeInput = document.querySelector('.popup__input_place_name')
 const linkInput = document.querySelector('.popup__input_place_link')
 
 
-function openPopupAddPlace () {
-    openPopup(placeAddPopup);
- } 
 
- function closePopupAddPlace(){
-   closePopup(placeAddPopup);
- }
-
-
- placeAddBtn.addEventListener('click', openPopupAddPlace); 
- placeCloseBtn.addEventListener ('click',closePopupAddPlace);
+ placeAddBtn.addEventListener('click', () => openPopup(placeAddPopup)); 
+ placeCloseBtn.addEventListener ('click',() => closePopup(placeAddPopup));
  placeSubmitBtn.addEventListener ('submit',handleAddPlace);
  
 
@@ -126,11 +116,8 @@ function getElement(item){
         openPopup(imageViewPopup);
       });
 
-      function closeImageView(){
-        closePopup(imageViewPopup);
-      }
 
-      imageViewCloseBtn.addEventListener('click',closeImageView);
+      imageViewCloseBtn.addEventListener('click',() => closePopup(imageViewPopup));
 
       const likeButton = getElementTemplate.querySelector('.element__like');
 
