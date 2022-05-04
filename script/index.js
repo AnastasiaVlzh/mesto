@@ -13,7 +13,6 @@ const profileSaveBtn = profileForm.querySelector('.popup__save');
 
 function openPopup(popups) {
   popups.classList.add('popup_opened');
-  cleanError(config, popups);
   document.addEventListener('keydown', handleCloseOnEsc);
 }
 
@@ -23,9 +22,9 @@ function closePopup(popups) {
 }
 
 function openProfileForm () {
-  openPopup(profileOpen)
   nameInput.value = profileName.textContent;
   jobInput.value = profileDescription.textContent; 
+  openPopup(profileOpen);
 }
 
 
@@ -87,12 +86,18 @@ const imageViewPopup = document.querySelector('.popup_place-image');
 const imageViewCloseBtn = imageViewPopup.querySelector('.popup__close');
 const popupImage = imageViewPopup.querySelector('.popup__image');
 const popupSubtitle = imageViewPopup.querySelector('.popup__caption');
-const placeInput = document.querySelector('.popup__input_place_name')
-const linkInput = document.querySelector('.popup__input_place_link')
+const placeInput = placeAddPopup.querySelector('.popup__input_place_name')
+const linkInput = placeAddPopup.querySelector('.popup__input_place_link')
+const placeForm = document.querySelector('.popup__form-place')
 
 
+ placeAddBtn.addEventListener('click', function() {
+  toggleButton (placeForm, placeSubmitBtn);
+  openPopup(placeAddPopup);
+  cleanError(config, placeAddPopup)
+}); 
 
- placeAddBtn.addEventListener('click', () => openPopup(placeAddPopup)); 
+
  placeCloseBtn.addEventListener ('click',() => closePopup(placeAddPopup));
  placeSubmitBtn.addEventListener ('submit',handleAddPlace);
  imageViewCloseBtn.addEventListener('click',() => closePopup(imageViewPopup));
@@ -141,9 +146,10 @@ function getElement(item){
     evt.preventDefault();
     const element = getElement({name: placeInput.value, link: linkInput.value});
     elementsContainer.prepend(element);
-    placeInput.value = "";
-    linkInput.value = "";
     closePopup(placeAddPopup);
+    placeInput.value = ""; 
+    linkInput.value = ""; 
+    
 }
 
 function handleRemoveElement(evt){
@@ -153,6 +159,7 @@ function handleRemoveElement(evt){
 
 
 placeSubmit.addEventListener('submit', handleAddPlace); 
+
   render();
 
 
@@ -173,6 +180,7 @@ placeSubmit.addEventListener('submit', handleAddPlace);
       closePopup(placeAddPopup);
     }
   });
+ 
   
   imageViewPopup.addEventListener("click", (event) => {
     if (
