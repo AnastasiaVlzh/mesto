@@ -16,7 +16,7 @@
 @media screen and (max-width:1045px) and (min-width:724px){
     .profile__edit-button{
         justify-self: start;
-        align-self: center;
+        align-self: end;
     }
 }
 @media screen and (max-width:640px){

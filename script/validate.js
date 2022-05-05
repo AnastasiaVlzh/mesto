@@ -20,12 +20,12 @@ function enableValidation(config){
         inputs.forEach((input)=>{
             input.addEventListener('input', (event) => handleFormInput(event,form,config,button));
         });
-        toggleButton (form, button);
+        toggleButton (form, button, config);
     });
   }
 
 function toggleButton (form,button){
-    button.classList.toggle('popup__save_disabled', !form.checkValidity());
+    button.classList.toggle(config.inactiveButtonClass, !form.checkValidity());
     button.disabled = !form.checkValidity();
 }
 
