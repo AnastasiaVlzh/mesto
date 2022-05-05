@@ -92,7 +92,7 @@ const placeForm = document.querySelector('.popup__form-place')
 
 
  placeAddBtn.addEventListener('click', function() {
-  toggleButton (placeForm, placeSubmitBtn);
+  toggleButton (placeForm, placeSubmitBtn,config);
   openPopup(placeAddPopup);
   cleanError(config, placeAddPopup)
 }); 

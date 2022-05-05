@@ -24,7 +24,7 @@ function enableValidation(config){
     });
   }
 
-function toggleButton (form,button){
+function toggleButton (form,button,config){
     button.classList.toggle(config.inactiveButtonClass, !form.checkValidity());
     button.disabled = !form.checkValidity();
 }
@@ -47,7 +47,7 @@ function handleFormInput(event,form,config,button){
         input.classList.add(config.inputErrorClass);
         formError.classList.add(config.errorClass);
     }
-    toggleButton (form, button);
+    toggleButton (form, button,config);
 }
 
 enableValidation(config);
