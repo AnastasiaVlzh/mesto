@@ -24,9 +24,11 @@ const imageViewPopup = document.querySelector('.popup_place-image');
 const imageViewCloseBtn = imageViewPopup.querySelector('.popup__close');
 const popupImage = imageViewPopup.querySelector('.popup__image');
 const popupSubtitle = imageViewPopup.querySelector('.popup__caption');
-const placeInput = placeAddPopup.querySelector('.popup__input_place_name')
-const linkInput = placeAddPopup.querySelector('.popup__input_place_link')
-const placeForm = document.querySelector('.popup__form-place')
+const placeInput = placeAddPopup.querySelector('.popup__input_place_name');
+const linkInput = placeAddPopup.querySelector('.popup__input_place_link');
+const placeForm = document.querySelector('.popup__form-place');
+
+const elements = document.querySelector('.elements');
 
 const cardFormValidator = new FormValidator(placeForm,config);
 const profileFormValidator = new FormValidator(profileForm,config);
@@ -75,11 +77,13 @@ profileForm.addEventListener('submit', handleProfileFormSubmit);
 placeCloseBtn.addEventListener ('click',() => closePopup(placeAddPopup));
 imageViewCloseBtn.addEventListener('click',() => closePopup(imageViewPopup));
 
-initialCards.forEach((item) => {
+function getCard (item) {
   const card = new Card(item, '.template',handleOpenCardImage);
-  const cardElement = card.generateCard();
+  return card.generateCard();
+}
 
-  document.querySelector('.elements').append(cardElement);
+initialCards.forEach((cardElement) => {
+  elements.append(getCard(cardElement));
 });
 
  function handleOpenCardImage (item){

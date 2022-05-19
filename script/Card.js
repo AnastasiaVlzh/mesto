@@ -18,11 +18,12 @@ export class Card{
     
     generateCard(){
         this._element = this._getTemplate();
+        this._elementPic = this._element.querySelector('.element__picture');
 
         this._setEventListeners();
         
-        this._element.querySelector('.element__picture').src= this._link;
-        this._element.querySelector('.element__picture').alt= this._name;
+        this._elementPic.src= this._link;
+        this._elementPic.alt= this._name;
         this._element.querySelector('.element__name').textContent = this._name;
         
 
@@ -30,6 +31,7 @@ export class Card{
     }
     _handleRemoveElement(evt){
          this._element.remove();
+         this._element = null;
     }
 
     _handleLikeElement(){
@@ -45,7 +47,7 @@ export class Card{
             this._handleLikeElement();
         });
 
-        this._element.querySelector('.element__picture').addEventListener('click',()=>{
+        this._elementPic.addEventListener('click',()=>{
             this._handleOpenCardImage({name: this._name, link: this._link});
         });
 
