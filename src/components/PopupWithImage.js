@@ -5,8 +5,8 @@ export class PopupWithImage extends Popup{
         super(popupSelector);
         this._imageSelector = document.querySelector(imageSelector);
         this._captionSelector = document.querySelector(captionSelector);
-        this._handleOpenCardImage = handleOpenCardImage;
     }
+    
     openPopup(item){
         this._captionSelector.textContent = item.name;
         this._imageSelector.src = item.link;
