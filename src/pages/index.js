@@ -1,6 +1,14 @@
 import { Card } from '../components/Card.js';
 import { FormValidator } from '../components/FormValidator.js';
-import { initialCards,config,profileEdit,profileForm,placeAddBtn,placeAddPopup,placeInput,linkInput,placeForm} from '../script/utils.js';
+import { initialCards,
+config,
+profileEdit,
+profileForm,
+placeAddBtn,
+placeInput,
+linkInput,
+placeForm,
+} from '../utils/utils.js';
 import { Section } from '../components/Section.js';
 import { UserInfo } from '../components/UserInfo.js';
 import { PopupWithImage } from '../components/PopupWithImage.js';
@@ -11,6 +19,7 @@ const cardFormValidator = new FormValidator(placeForm,config);
 const profileFormValidator = new FormValidator(profileForm,config);
 
 const popupOpenPicture = new PopupWithImage('.popup_place-image', '.popup__image', '.popup__caption');
+popupOpenPicture.setEventListeners();
 
 const profileUserInfo = new UserInfo({
   name: '.profile__user-name',
@@ -61,7 +70,6 @@ const createCard = (item) => {
   const card = new Card(item, '.template',{handleOpenCardImage:()=>{
      popupOpenPicture.openPopup(item);
   }});
-  popupOpenPicture.setEventListeners();
   const cardElement = card.generateCard()
   return cardElement;
 }
