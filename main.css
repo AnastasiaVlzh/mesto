@@ -6,7 +6,7 @@
 .header__logo{height:33px;left:0;top:0;width:142px}@media screen and (max-width:723px) and (min-width:641px){.header__logo{margin-left:27px}}@media screen and (max-width:640px){.header__logo{bottom:31.6px;height:24.4px;margin-left:27px;width:103.74px}}
 .profile{align-items:center;box-sizing:border-box;display:flex;justify-content:space-between;margin-left:200px;margin-right:200px;margin-top:36px}@media screen and (max-width:1045px) and (min-width:724px){.profile{margin-left:100px;margin-right:100px}}@media screen and (max-width:723px) and (min-width:641px){.profile{margin-left:19px;margin-right:19px}}@media screen and (max-width:640px){.profile{flex-direction:column;margin-left:19px;margin-right:19px;margin-top:73.6px;min-height:286px;min-width:282px}}
 .profile__info{-moz-column-gap:25px;column-gap:25px;display:grid;grid-template-areas:"avatar user-name edit-button" "avatar description descriprion";row-gap:16px}@media screen and (max-width:1045px) and (min-width:724px){.profile__info{align-items:center;-moz-column-gap:10px;column-gap:10px;justify-items:center;row-gap:22px}}@media screen and (max-width:640px){.profile__info{align-items:end;-moz-column-gap:10px;column-gap:10px;grid-template-areas:"avatar avatar" "user-name edit-button" "description description";justify-items:center;row-gap:14px}}
-.profile__avatar{border-radius:50%;grid-area:avatar;max-width:120px}
+.profile__avatar{border-radius:50%;grid-area:avatar;max-width:120px;min-height:120px;-o-object-fit:cover;object-fit:cover}
 .profile__user-name{align-self:end;color:#fff;font-size:42px;font-style:normal;font-weight:500;grid-area:user-name;line-height:1.14;margin:0;max-width:294px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media screen and (max-width:1045px) and (min-width:641px){.profile__user-name{font-size:30px;max-width:230px}}@media screen and (max-width:640px){.profile__user-name{font-size:27px;justify-self:end;line-height:33px;max-width:189px;text-align:center}}
 .profile__description{color:#fff;font-size:18px;font-weight:400;grid-area:description;line-height:22px;margin:0;max-width:336px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media screen and (max-width:1045px) and (min-width:641px){.profile__description{max-width:230px}}@media screen and (max-width:640px){.profile__description{font-size:14px;line-height:17px;max-width:282px;text-align:center}}
 .profile__edit-button{align-self:end;background-color:transparent;background-image:url(8667ac4a523e8fc42e59.svg);background-position:50%;background-repeat:no-repeat;background-size:10px,10px;border:1px solid #fff;box-sizing:border-box;cursor:pointer;grid-area:edit-button;height:24px;padding:0;width:24px}@media screen and (max-width:1045px) and (min-width:724px){.profile__edit-button{align-self:end;justify-self:start}}@media screen and (max-width:640px){.profile__edit-button{align-self:center;height:18px;justify-self:start;width:18px}}
@@ -39,6 +39,8 @@
 .popup__field{position:relative}
 .popup__error_visible{color:red;font-size:12px;font-style:normal;font-weight:400;left:33px;line-height:15px;position:absolute;top:50px}@media screen and (max-width:640px){.popup__error_visible{left:20px;top:70px}}
 .popup__form{height:240px}
+.element__likes{align-items:center;display:flex;flex-direction:column;height:40px;justify-content:space-between;width:22px}
+.element__like-number{font-size:13px;font-weight:400;margin:3px 0 0}
 
 
 /*# sourceMappingURL=main.css.map*/
