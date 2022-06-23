@@ -45,6 +45,7 @@
 .popup__save_confirm{margin:0 36px 36px}
 .popup__form-confirm{height:200px;margin-top:5px}@media screen and (max-width:640px){.popup__form-confirm{margin-top:25px}}
 .element__remove_active{visibility:visible}
+.popup__content_avatar{height:272px}
 
 
 /*# sourceMappingURL=main.css.map*/
