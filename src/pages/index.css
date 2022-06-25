@@ -46,7 +46,7 @@
 @import url(../blocks/popup/__form/popup__form-confirm.css);
 @import url(../blocks/element/__remove/__remove_active/element__remove_active.css);
 @import url(../blocks/popup/__content/_avatar/popup__content_avatar.css);
-@import url(../blocks/profile/__avatar/_edit/profile__avatar_edit.css);
+@import url(../blocks/profile/__avatar/_edit/profile__avatar-edit.css);
 @import url(../blocks/popup/__input/_type_photo/popup__input_type_photo.css);
 @import url(../blocks/popup/__form/popup__form_avatar.css);
 
