@@ -22,6 +22,7 @@ import { PopupWithConfirm} from '../components/PopupWithConfirm.js';
 
 const cardFormValidator = new FormValidator(placeForm,config);
 const profileFormValidator = new FormValidator(profileForm,config);
+const profilePhotoValidator = new FormValidator(profileFormAvatar,config);
 
 const popupOpenPicture = new PopupWithImage('.popup_place-image', '.popup__image', '.popup__caption');
 popupOpenPicture.setEventListeners();
@@ -211,6 +212,7 @@ const updateCardList = () =>{
 
 cardFormValidator.enableValidation();
 profileFormValidator.enableValidation();
+//profilePhotoValidator.enableValidation();
 
 
   updateCardList();
