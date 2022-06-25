@@ -68,7 +68,6 @@ const popupProfileForm = new PopupWithForm('.popup_profile-form',
     .then((res)=>{
       isLoading(false,'.popup__save_profile');
       profileUserInfo.setUserInfo(res);
-      console.log(res);
     })
     .catch((err)=>
     console.log(err));
