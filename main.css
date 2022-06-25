@@ -48,7 +48,7 @@
 .popup__content_avatar{height:272px}
 .popup__input_type_photo{margin-top:10px}
 .popup__form_avatar{height:100px;margin-top:10px}@media screen and (max-width:640px){.popup__form_avatar{margin-top:45px}}
-.profile__avatar_edit{grid-area:avatar;height:120px;opacity:0;width:120px}.profile__avatar_edit:hover{background:url(a086f758840ae814ecde.svg) no-repeat 50% 50% rgba(0,0,0,.8);cursor:pointer;opacity:1;transition:opacity .3s linear}
+.profile__edit{grid-area:avatar;height:120px;opacity:0;width:120px}.profile__edit:hover{background:url(a086f758840ae814ecde.svg) no-repeat 50% 50% rgba(0,0,0,.8);cursor:pointer;opacity:1;transition:opacity .3s linear}
 
 
 /*# sourceMappingURL=main.css.map*/
