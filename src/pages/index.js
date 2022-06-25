@@ -212,7 +212,7 @@ const updateCardList = () =>{
 
 cardFormValidator.enableValidation();
 profileFormValidator.enableValidation();
-//profilePhotoValidator.enableValidation();
+profilePhotoValidator.enableValidation();
 
 
   updateCardList();
