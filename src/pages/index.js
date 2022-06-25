@@ -18,7 +18,7 @@ import { PopupWithForm } from '../components/PopupWithForm.js';
 import '../pages/index.css'
 import { Api } from '../components/api.js';
 import { data } from 'autoprefixer';
-import { PopupWithConfirm, PopupWithDelete } from '../components/PopupWithConfirm.js';
+import { PopupWithConfirm} from '../components/PopupWithConfirm.js';
 
 const cardFormValidator = new FormValidator(placeForm,config);
 const profileFormValidator = new FormValidator(profileForm,config);
