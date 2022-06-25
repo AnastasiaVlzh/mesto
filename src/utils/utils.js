@@ -16,5 +16,5 @@
   export const linkInput = placeAddPopup.querySelector('.popup__input_place_link');
   export const placeForm = placeAddPopup.querySelector('.popup__form');
   export const placeDeleteBtn = document.querySelector('.element__remove');
-  export const profileAvatar = document.querySelector('.profile__avatar_edit');
+  export const profileAvatar = document.querySelector('.profile__edit');
   export const profileFormAvatar = document.querySelector('.popup__form_avatar')
