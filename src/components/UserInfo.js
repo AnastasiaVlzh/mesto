@@ -5,6 +5,7 @@ export class UserInfo {
     this._avatar = document.querySelector(avatar);
     this._formName = document.querySelector(formName);
     this._formJob = document.querySelector(formJob);
+    this._userId = null;
   }
 
   getUserInfo() {
@@ -22,4 +23,13 @@ export class UserInfo {
     this._formName.value = data.name;
     this._formJob.value = data.about;
   }
+
+  getUserId() {
+    return this._userId;
+  }
+
+  setUserId(userId) {
+    this._userId = userId;
+  }
+
 }

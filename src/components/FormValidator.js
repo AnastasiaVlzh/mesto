@@ -17,7 +17,7 @@ export class FormValidator{
     this.toggleButton ();
     };
 
-  toggleButton (){
+  toggleButton(){
     this._button.classList.toggle(this._config.inactiveButtonClass, !this._form.checkValidity());
     this._button.disabled = !this._form.checkValidity();
     }
@@ -33,13 +33,14 @@ export class FormValidator{
       input.classList.add(this._config.inputErrorClass);
       formError.classList.add(this._config.errorClass);
     }
-      this.toggleButton ();
+      this.toggleButton();
     }
 
   cleanError() {
       this._inputs.forEach((input) => {
         this._hideError(input);
       });
+      this.toggleButton();
     };
     
   _hideError (inputElement) {

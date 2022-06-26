@@ -19,3 +19,5 @@
   export const profileAvatar = document.querySelector('.profile__edit');
   export const profilePopup = document.querySelector('.popup_avatar')
   export const profileFormAvatar = profilePopup.querySelector('.popup__form')
+  export const inputName = document.querySelector('.popup__input_type_name');
+  export const inputJob =  document.querySelector('.popup__input_type_job');

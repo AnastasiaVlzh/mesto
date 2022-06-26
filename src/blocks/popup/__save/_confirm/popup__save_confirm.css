@@ -4,5 +4,10 @@
     margin-right: 36px;
     margin-bottom: 20px;
     margin-top: 40px;
+}
 
+@media screen and (max-width:640px){
+    .popup__save_confirm{
+        margin-top: 60px;
+    }
 }
