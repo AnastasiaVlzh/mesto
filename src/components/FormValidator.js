@@ -27,7 +27,7 @@ export class FormValidator{
     const formError = document.querySelector(`#${input.id}-error`);
         
     if(input.validity.valid){
-      this._hideError(input);        
+      this._hideError(input);    
     } else {
       formError.textContent=input.validationMessage;
       input.classList.add(this._config.inputErrorClass);
@@ -45,8 +45,8 @@ export class FormValidator{
     
   _hideError (inputElement) {
     const errorElement = this._form.querySelector(`#${inputElement.id}-error`)
-    inputElement.classList.remove(this._inputErrorClass);
+    inputElement.classList.remove(this._config.inputErrorClass);
     errorElement.textContent = '';
-    errorElement.classList.remove(this._errorClass);
+    errorElement.classList.remove(this._config.errorClass);
     };
 }
